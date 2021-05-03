@@ -5,17 +5,23 @@ a program that determines the number at postion N of a sequence
 ![features](https://user-images.githubusercontent.com/58091631/116882339-07d77a80-ac2d-11eb-8d93-01e477c9f529.png)   
 
 # How to install
-pre compiled binaries available for windows on releases page
-
-# Building
-after cloning repository with ```git clone https://github.com/quadroli/sequencer```   
-enter root directory: ```cd sequencer```
-run ```make```  
-Finally, sequencer is ready for use ```./sequencer```
+Download executable(.exe) from releases page for Windows
 
 # Usage on windows   
 open ```cmd``` and navigate to folder that has ```sequencer.exe```    
-then run ```sequencer``` from ```cmd```   
+then run ```sequencer``` from ```cmd```  
+
+# Building
+after cloning repository with ```git clone https://github.com/quadroli/sequencer```   
+enter root folder: ```cd sequencer```
+
+a)Linux: 
+run ```make```  
+finally, sequencer is ready for use ```./sequencer```
+
+b)Windows:  
+run ```mingw32-make```  
+then run ```sequencer``` from ```cmd``` whilist in folder   
 
 # Known Issues   
 a) can not evaluate prime number at N (yet)  
