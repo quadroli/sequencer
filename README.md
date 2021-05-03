@@ -1,5 +1,5 @@
 # Sequencer
-a program that determines the number at postion N of a sequence
+A program that determines the number at postion N of a sequence
 
 # Example usage   
 ![features](https://user-images.githubusercontent.com/58091631/116882339-07d77a80-ac2d-11eb-8d93-01e477c9f529.png)   
