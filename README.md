@@ -5,7 +5,7 @@ A program that determines the number at postion N of a sequence
 ![features](https://user-images.githubusercontent.com/58091631/116882339-07d77a80-ac2d-11eb-8d93-01e477c9f529.png)   
 
 # How to install
-Download executable(.exe) from releases page for Windows
+Download executable(.exe) from [releases page](https://github.com/quadroli/sequencer/releases) for Windows
 
 # Usage on windows   
 open ```cmd``` and navigate to folder that has ```sequencer.exe```    
