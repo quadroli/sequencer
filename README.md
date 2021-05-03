@@ -8,7 +8,7 @@ a program that determines the number at postion N of a sequence
 pre compiled binaries available for windows on releases page
 
 # Building
-after cloning repository with ```https://github.com/quadroli/sequencer```   
+after cloning repository with ```git clone https://github.com/quadroli/sequencer```   
 enter root directory: ```cd sequencer```
 run ```make```  
 Finally, sequencer is ready for use ```./sequencer```
