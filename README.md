@@ -29,3 +29,7 @@ a) can not evaluate prime number at N (yet)
 
 b) unreliable for decimal numbers; IE³ needs to be revised   
 ![decimals](https://user-images.githubusercontent.com/58091631/116882788-846a5900-ac2d-11eb-8c00-6bce128bfdf2.png)  
+
+c) inputing more than 3 numbers causes an inconvinience
+![excess](https://user-images.githubusercontent.com/58091631/116887982-9a7b1800-ac33-11eb-8f14-1b5e82b7b769.png)
+
