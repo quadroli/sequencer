@@ -3,7 +3,7 @@
 
 #define MAXINPUT 3
 
-#include "colors.h"
+#include "printfcolor.h"
 #define COLORS
 
 typedef enum {ARITHMETIC,GEOMETRIC,PRIME,UNKNOWN} Sequence;
@@ -14,11 +14,18 @@ float raised,number,term,numbers[10];
 void
 getInput()
 {
-    printf("Kindly input " RED "first three " DEFAULT "numbers of sequence " YELLOW "below " DEFAULT  "using <" GREEN  "spacebar" DEFAULT  "> to separate\n");
+    printf("Kindly input ");
+    printfc_fg(RED, "first three ");
+    printf("numbers of sequence ");
+    printfc_fg(YELLOW, "below ");
+    printf("using <");
+    printfc_fg(GREEN, "spacebar");
+    printf("> to separate\n");
 	for (i = 0; i < MAXINPUT; i++){
         if(!scanf("%f",&number)){
-			printf(RED"ERROR: " DEFAULT "Unable to get input\n");
-			exit(EXIT_FAILURE);
+		printfc_fg(RED, "ERROR: ");
+		printf("Unable to get input\n");
+		exit(EXIT_FAILURE);
 		}
         numbers[i] = number;
     }
@@ -55,12 +62,13 @@ determineSequence()
 void
 prompt()
 {
-	printf(MAGENTA "Position " DEFAULT "of term: " BLUE);
+	printfc_fg(MAGENTA, "Position ");
+	printf("of term: ");
 	if(!scanf("%u",&position)){
-		printf(RED"ERROR: "DEFAULT " Unable to get input\n");
+		printfc_fg(RED, "ERROR: ");
+		printf("Unable to get input\n");
         exit(EXIT_FAILURE);
 	}
-	printf(DEFAULT);
 }
 float
 raise
@@ -103,24 +111,28 @@ sequencer()
 
 	case PRIME:
 		prompt();
-		printf(RED"WIP:"DEFAULT"prime number finder not in its prime yet ;)\n");
+		printfc_fg(RED, "WIP:");
+		printf("prime number finder not in its prime yet ;)\n");
 	return 0;
 
 	case UNKNOWN:
-		printf(YELLOW "Sorry," DEFAULT " could " RED "not" DEFAULT " determine type of" BLUE " sequence\n" DEFAULT);
+		printfc_fg(YELLOW, "Sorry,");
+		printf(" could ");
+		printfc_fg(RED, "not");
+		printf("determine type of");
+		printfc_fg(BLUE, " sequence\n");
 	return 0;
 	}
 
-	printf(BLUE "Term " DEFAULT "is: " GREEN "%g\n" DEFAULT, term);
+	printfc_fg(BLUE, "Term ");
+	printf("is: ");
+	printfc_fg(GREEN, "%g\n", term);
 	return 0;
 }
 
 int
 main()
 {
-	#ifdef __WIN32__
-		enableColorsOnWindows();
-	#endif
 	getInput();
 	sequencer();
 	return 0;
