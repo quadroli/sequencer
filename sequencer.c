@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAXINPUT 3
+#define MAXINPUT 4
 
 #include "printfcolor.h"
 #define COLORS
